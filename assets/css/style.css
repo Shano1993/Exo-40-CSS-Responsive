@@ -1,0 +1,64 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+#container {
+    background-color: black;
+}
+
+#one, #two ,#three {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+#one {
+    width: 40%;
+    background-color: red;
+    border: 1px solid white;
+}
+
+#two {
+    background-color: blue;
+    border: 1px solid lightgray;
+}
+
+#three {
+    background-color: green;
+    border: 1px solid ivory;
+}
+
+#two, #three {
+    width: 20%;
+}
+
+p, span, a {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 100%;
+    }
+    #one, #two, #three {
+        display: block;
+        width: 100%;
+    }
+    p, span, a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #last, span, a {
+        display: none;
+    }
+
+}
